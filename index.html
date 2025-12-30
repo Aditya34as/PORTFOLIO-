@@ -1,102 +1,93 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personal Portfolio Website">
+    <meta name="description" content="Professional Portfolio Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Singh Chauhan | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio</title>
 </head>
 
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Aditya Singh Chauhan</h1>
-        <p>B.Tech Computer Science Student | Web Development Beginner</p>
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Aditya Singh Chauhan</h1>
+        <p class="tagline">B.Tech CSE | Web Developer | MERN Learner</p>
 
-        <!-- Navigation -->
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#contact">Contact</a>
+        <nav class="navbar">
+            <a href="#about" data-section="about">About</a>
+            <a href="#skills" data-section="skills">Skills</a>
+            <a href="#projects" data-section="projects">Projects</a>
+            <a href="#contact" data-section="contact">Contact</a>
         </nav>
-        <hr>
-    </header>
 
-    <!-- Main Content -->
-    <main>
+        <button id="themeToggle" class="btn">Dark Mode</button>
+    </div>
+</header>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
+<!-- MAIN -->
+<main class="container">
 
-            <img src="images/profile.jpg" alt="Profile picture of Aditya Singh Chauhan" width="150">
+    <!-- ABOUT -->
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile Image" class="profile-img">
 
-            <p>
-                Hello! I'm Aditya Singh Chauhan, a B.Tech Computer Science student with a passion for web development.
-                I am currently learning HTML5, C, C++, JavaScript, and the MERN stack. I enjoy solving problems and
-                collaborating with others to create innovative solutions.
-            </p>
+        <p>
+            I am a Computer Science student passionate about building interactive,
+            user-friendly web applications. I enjoy learning modern technologies
+            and solving real-world problems.
+        </p>
 
- 
-        </section>
+        <button id="toggleAbout" class="btn-outline">Show / Hide</button>
+    </section>
 
-        <hr>
+    <!-- SKILLS -->
+    <section id="skills" class="card">
+        <h2>Skills</h2>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
+        <div class="skills-grid">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>C / C++</span>
+            <span>MERN Stack</span>
+        </div>
+    </section>
 
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>C Programming</li>
-                <li>C++ Programming</li>
-                <li> JavaScript</li>
-                <li>MERN</li>
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+        <h2>Project Gallery</h2>
 
-            </ul>
+        <img id="sliderImage" src="images/project1.jpg" class="project-img">
 
-            <h3>Other Skills</h3>
-            <ol>
-                <li>Problem Solving</li>
-                <li>Logical Thinking</li>
-                <li>Team Collaboration</li>
-            </ol>
-        </section>
+        <div class="slider-controls">
+            <button id="prev" class="btn-outline">Previous</button>
+            <button id="next" class="btn-outline">Next</button>
+        </div>
+    </section>
 
-        <hr>
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+        <h2>Contact Me</h2>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
-            <form action="#" method="post">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+</main>
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Aditya Singh Chauhan | All Rights Reserved</p>
+</footer>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-                <input type="submit" value="Send Message">
-            </form>
-
-             
-            
-        </section>
-
-    </main>
-
-    <hr>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Aditya Singh Chauhan. All Rights Reserved.</p>
-    </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
