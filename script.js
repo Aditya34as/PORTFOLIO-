@@ -65,25 +65,29 @@ aboutNavLink.addEventListener("click", () => {
 });
 
 // ===================
-// IMAGE SLIDER
+// IMAGE SLIDER FIX
 // ===================
 const images = [
-    "images/project1.jpg",
-    "images/project2.jpg",
-    "images/project3.jpg"
+    "images/project1.png", // Ensure correct file extension
+    "images/project2.png"
 ];
 
 let index = 0;
 const slider = document.getElementById("sliderImage");
 
-document.getElementById("next").addEventListener("click", () => {
-    index = (index + 1) % images.length;
+// Update slider image
+function updateSliderImage() {
     slider.src = images[index];
+}
+
+document.getElementById("next").addEventListener("click", () => {
+    index = (index + 1) % images.length; // Loop to the start
+    updateSliderImage();
 });
 
 document.getElementById("prev").addEventListener("click", () => {
-    index = (index - 1 + images.length) % images.length;
-    slider.src = images[index];
+    index = (index - 1 + images.length) % images.length; // Loop to the end
+    updateSliderImage();
 });
 
 // ===================
