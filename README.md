@@ -1,56 +1,38 @@
-# Personal Portfolio Website
+ # Personal Portfolio Website
 
-##  Project Overview
-This project is a responsive personal portfolio website built using HTML5 and CSS. 
-It showcases personal details, skills, and a contact form with clean styling and mobile responsiveness.
+A professional, interactive, and responsive personal portfolio website built using **HTML, CSS, and JavaScript**.  
+This project demonstrates core front-end development skills along with JavaScript interactivity and best practices.
 
----
 
-##  Objectives
-- Learn CSS styling and layout techniques
-- Implement responsive design using media queries
-- Use Flexbox for layout
-- Apply hover effects and custom fonts
+# Project Overview
 
----
+This portfolio website showcases my personal profile, skills, and projects in a clean and modern layout.  
+JavaScript is used to make the website dynamic and interactive, improving user experience.
 
-##  Technologies Used
-- HTML5
-- CSS3
-- Google Fonts
-- Flexbox
 
----
+# Objectives
 
-##  Project Structure
-index.html  
-style.css  
-images/  
-screenshots/  
+- Create a professional personal portfolio
+- Apply JavaScript concepts learned in Week 3
+- Implement interactivity using DOM manipulation
+- Validate user input through form validation
+- Store user preferences using Local Storage
 
----
 
-##  CSS Concepts Used
-- CSS selectors (element, ID, pseudo-class)
-- Box model (margin, padding, border)
-- Flexbox layout
-- CSS variables for color scheme
-- Hover effects and transitions
-- Media queries for responsiveness
+# Technologies Used
 
----
+- HTML5 – Structure of the website  
+- CSS3 – Styling, layout, and responsiveness  
+- JavaScript (ES6) – Interactivity and dynamic behavior  
 
-##  Responsive Design
-The website adapts to mobile screens using media queries.
-Navigation links stack vertically on smaller devices.
 
----
 
-## Testing
-- Tested on Chrome and Edge
-- Verified mobile responsiveness using browser dev tools
+# Project Structure
+portfolio/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+│── images/
 
----
 
-##  Screenshots
-Screenshots are provided in the screenshots folder showing desktop and mobile views.
